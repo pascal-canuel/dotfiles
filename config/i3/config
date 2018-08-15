@@ -103,7 +103,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10: Spotify"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -116,6 +116,8 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+
+assign [class="Spotify"] $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -172,6 +174,9 @@ bar {
 # shortcut to lock i3 
 bindsym $mod+Shift+x exec i3lock
 
+# run Pulse Audio on startup
+exec --no-startup-id "pulseaudio --start
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -182,6 +187,4 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# run pulseaudio on startup
-exec --no-startup-id "pulseaudio --start
 
