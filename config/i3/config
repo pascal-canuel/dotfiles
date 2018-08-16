@@ -176,11 +176,62 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+# i3-gaps 
+# disable windows titlebars
+for_window [class="^.*"] border pixel 0
+
+# Default gap
+gaps inner 15
+gaps outer 5
+# Link that explains everything:  https://github.com/Airblader/i3
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+set $bg-color 	         #ffffff
+set $inactive-bg-color   #ffffff
+set $text-color          #ff0000
+set $inactive-text-color #000000
+set $urgent-bg-color     #33ff33
+
+set $bg-color1 	          #000000
+set $inactive-bg-color1   #000000
+set $text-color1          #ff0000
+set $inactive-text-color1 #ffffff
+set $urgent-bg-color1     #33ff33
 
 # window colors
 #                       border              background         text                 indicator
@@ -192,15 +243,36 @@ client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	output HDMI-1
+
+        #status_command i3blocks -c ~/.config/i3/i3blocks.conf 
 	font pango: Consolata, Awesome 11
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf 
+
 	colors {
 		background $bg-color
-	    	separator #757575
+	  	separator #757575
 		#                  border             background         text
 		focused_workspace  $bg-color          $bg-color          $text-color
 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		active_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}	
+}
+
+bar {
+	output DP-3
+	
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf 
+	font pango: Consolata, Awesome 11
+
+	colors {
+		background $bg-color1
+	  	separator #757575
+		#                  border             background         text
+		focused_workspace  $bg-color1          $bg-color1          $text-color1
+		inactive_workspace $inactive-bg-color1 $inactive-bg-color1 $inactive-text-color1
+		active_workspace $inactive-bg-color1 $inactive-bg-color1 $inactive-text-color1
+		urgent_workspace   $urgent-bg-color1   $urgent-bg-color1   $text-color1
 	}	
 }
 
@@ -218,5 +290,4 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec --no-startup-id "pulseaudio --start
-
-exec compton
+exec_always compton
