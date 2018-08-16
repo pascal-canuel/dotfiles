@@ -21,4 +21,6 @@ if [ -f ~/.Xmodmap ]; then
 fi
 ```   
 
-Vim [relative line numbers](https://jeffkreeftmeijer.com/vim-number/)
+Vim [relative line numbers](https://jeffkreeftmeijer.com/vim-number/)   
+changes to `~/.vimrc` will only be apply to the user. If you want to change it
+globally, locate your config file `:version`
