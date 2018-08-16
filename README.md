@@ -3,11 +3,9 @@ Read these [recommandations](https://wiki.archlinux.org/index.php/general_recomm
 
 Vim change mapping, Caps Lock for Escape   
 1. For the session   
-`xmodmap -e "clear lock"
-xmodmap -e "keycode 0x42 = Escape"`   
+`xmodmap -e "clear lock" -e "keycode 0x42 = Escape"`   
 Undo   
-`xmodmap -e "keycode 0x42 = Caps_Lock"
-xmodmap -e "add lock = Caps_Lock"`   
+`xmodmap -e "keycode 0x42 = Caps_Lock" -e "add lock = Caps_Lock"`   
 2. Permenantly, edit `~/.Xmodmap`   
 ```
 !! No Caps Lock
