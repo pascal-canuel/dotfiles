@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/firstrice/Downloads/deathnote.jpg" added="2018-08-14T22:47:52Z" modified="2018-08-14T22:47:53Z" visited="2018-08-14T22:47:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-14T22:47:53Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/firstrice/Downloads/Font-Awesome-5.2.0.zip" added="2018-08-15T02:35:06Z" modified="2018-08-15T02:35:06Z" visited="2018-08-15T02:35:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-15T02:35:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/firstrice/Downloads/Font-Awesome-4.4.0.zip" added="2018-08-15T03:20:31Z" modified="2018-08-15T03:20:31Z" visited="2018-08-15T03:20:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-15T03:20:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/firstrice/Downloads/Inconsolata.zip" added="2018-08-16T05:05:56Z" modified="2018-08-16T05:05:56Z" visited="2018-08-16T05:05:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-08-16T05:05:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
