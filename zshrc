@@ -11,4 +11,4 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-#source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
