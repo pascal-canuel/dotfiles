@@ -1,5 +1,7 @@
+# Link
 Read these [recommandations](https://wiki.archlinux.org/index.php/general_recommendations) to get started ricing     
 
+# Vim
 Vim change mapping, Caps Lock for Escape   
 1. For the session    
 `xmodmap -e "clear lock" -e "keycode 0x42 = Escape"`   
@@ -25,4 +27,5 @@ Vim [relative line numbers](https://jeffkreeftmeijer.com/vim-number/)
 changes to `~/.vimrc` will only be apply to the user. If you want to change it
 globally, locate your config file `:version`
 
+# Fonts
 [Powerline fonts](https://github.com/powerline/fonts)
