@@ -99,8 +99,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Terminal"
-set $ws2 "2: Firefox"
+set $ws1 ""
+set $ws2 ""
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -108,7 +108,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10: Spotify"
+set $ws10 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -247,8 +247,8 @@ client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
 bar {
 	output HDMI-1
 
-        #status_command i3blocks -c ~/.config/i3/i3blocks.conf 
-	font pango: Font Awesome 5 Free, DEATHNOTE font 20
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf 
+	font pango: Font Awesome 5 Brands, Font Awesome 5 Free, DEATHNOTE font 20
 
 	colors {
 		background $bg-color
@@ -264,8 +264,8 @@ bar {
 bar {
 	output DP-3
 	
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf 
-	font pango: DEATHNOTE font 20
+        status_command i3blocks -c ~/.config/i3/i3blocks1.conf 
+	font pango: Font Awesome 5 Brands, Font Awesome 5 Free, DEATHNOTE font 20
 
 	colors {
 		background $bg-color1
