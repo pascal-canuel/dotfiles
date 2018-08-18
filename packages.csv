@@ -27,3 +27,5 @@ spotify, a, music player
 vscode, a, code editor
 firefox, , web browser
 openssh, , network security utilities
+texlive-most, , TeX system for LaTex,
+tmux, , terminal multiplexer
