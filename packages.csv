@@ -14,6 +14,7 @@ yaourt, g, install AUR (not supported anymore! need to change)
 vim, , text editor
 imagemagick, , display image files into the console
 ranger, , console based file manager
+w3m, , preview images into ranger
 lxappearance, , unifying  visual configuration of the environment
 arandr, , monitor configuration
 pulseaudio,  , sound server (don't forget to unmute your channels)
