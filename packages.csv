@@ -4,7 +4,7 @@ os-prober, , detects other OS installed (generate grub menu.lst file)
 sudo, , give certain users or groups the ability to run commands as root
 zsh, , interactive shell (command-line interpreter)
 i3, x, tiling window manager (really well aligned goals https://i3wm.org)
-i3, a, fork of i3 with more features
+i3-gaps, a, fork of i3 with more features
 dmenu, x, application launcher
 rofi, , application launcher (more editable)
 xorg, , display server 
