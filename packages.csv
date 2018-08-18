@@ -1,10 +1,19 @@
-Package, Tag, Description
-grub, , Boot loader
-os-prober, , Detects other OS installed (generate grub menu.lst file)
-sudo, , Give certain users or groups the ability to run commands as root
-zsh, , Interactive shell (command-line interpreter)
-i3, , Tiling window manager (really well aligned goals https://i3wm.org)
-dmenu, x,
-rofi, ,
-xorg, ,
-xorg-xinit, ,
+Package, tag, Description
+grub, , boot loader
+os-prober, , detects other OS installed (generate grub menu.lst file)
+sudo, , give certain users or groups the ability to run commands as root
+zsh, , interactive shell (command-line interpreter)
+i3, , tiling window manager (really well aligned goals https://i3wm.org)
+dmenu, x, application launcher
+rofi, , application launcher (more editable)
+xorg, , display server 
+xorg-xinit, , start an Xorg display or other applications
+rxvt-unicode, , terminal emulator (supports transparency)
+yaourt, g, install AUR (not supported anymore! need to change)
+vim, , text editor
+imagemagick, , display image files into the console
+ranger, , console based file manager
+lxappearance, , unifying  visual configuration of the environment
+arandr, , monitor configuration
+pulseaudio,  , sound server (don't forget to unmute your channels)
+pavucontrol, , grapghical control of sound
