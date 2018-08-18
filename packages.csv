@@ -3,7 +3,8 @@ grub, , boot loader
 os-prober, , detects other OS installed (generate grub menu.lst file)
 sudo, , give certain users or groups the ability to run commands as root
 zsh, , interactive shell (command-line interpreter)
-i3, , tiling window manager (really well aligned goals https://i3wm.org)
+i3, x, tiling window manager (really well aligned goals https://i3wm.org)
+i3, a, fork of i3 with more features
 dmenu, x, application launcher
 rofi, , application launcher (more editable)
 xorg, , display server 
@@ -17,3 +18,11 @@ lxappearance, , unifying  visual configuration of the environment
 arandr, , monitor configuration
 pulseaudio,  , sound server (don't forget to unmute your channels)
 pavucontrol, , grapghical control of sound
+compton, , Xorg compositor (used for transparency)
+cmatrix, , matrix animation
+bash-pipes, , pipes animation
+noefetch, a, display system information
+spotify, a, music player
+vscode, a, code editor
+firefox, , web browser
+openssh, , network security utilities
