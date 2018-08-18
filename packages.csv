@@ -1,0 +1,10 @@
+Package, Tag, Description
+grub, , Boot loader
+os-prober, , Detects other OS installed (generate grub menu.lst file)
+sudo, , Give certain users or groups the ability to run commands as root
+zsh, , Interactive shell (command-line interpreter)
+i3, , Tiling window manager (really well aligned goals https://i3wm.org)
+dmenu, x,
+rofi, ,
+xorg, ,
+xorg-xinit, ,
