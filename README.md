@@ -1,5 +1,5 @@
 # Showcase
-![](screenshot)
+![](screenshot.jpg)
 # Link
 Read these [recommandations](https://wiki.archlinux.org/index.php/general_recommendations) to get started ricing     
 
