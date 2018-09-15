@@ -8,9 +8,7 @@
 <h1 align="center">Showcase</h1>
 <img src="screenshot.jpg"/>
 
-<h1 align="center">Get started</h1>    
-<a href="https://wiki.archlinux.org/index.php/general_recommendations">recommandations</a>
-
 <h1 align="center">Fonts</h1>
 <a href="https://github.com/powerline/fonts">Powerline fonts</a>
+
 ## By Pascal Canuel
