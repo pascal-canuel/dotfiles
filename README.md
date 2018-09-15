@@ -1,33 +1,16 @@
-# Showcase
-![](screenshot.jpg)
-# Link
-Read these [recommandations](https://wiki.archlinux.org/index.php/general_recommendations) to get started ricing     
+<h1 align="center">Dotfiles - Arch Linux</h1> 
+<p align="center">
+<img src="https://img.shields.io/badge/License-MIT-blue.svg">
+</p>
 
-# Vim
-Vim change mapping, Caps Lock for Escape   
-1. For the session    
-`xmodmap -e "clear lock" -e "keycode 0x42 = Escape"`   
-Undo   
-`xmodmap -e "keycode 0x42 = Caps_Lock" -e "add lock = Caps_Lock"`   
+<p align="center">🍙 my AWESOME Arch Linux rice 🍚</p>
 
-2. Permenantly, edit `~/.Xmodmap`   
-```
-!! No Caps Lock
-clear lock
-!! Make Caps_lock an escape key.
-keycode 0x42 = Escape 
-```   
-Run it to change it now `xmodmap ~/.Xmodmap`  
-Add this to your `~/.xinitrc` so it will be call each session   
-```
-if [ -f ~/.Xmodmap ]; then
-  xmodmap ~/.Xmodmap
-fi
-```   
+<h1 align="center">Showcase</h1>
+<img src="screenshot.jpg"/>
 
-Vim [relative line numbers](https://jeffkreeftmeijer.com/vim-number/)   
-changes to `~/.vimrc` will only be apply to the user. If you want to change it
-globally, locate your config file `:version`
+<h1 align="center">Get started</h1>    
+<a href="https://wiki.archlinux.org/index.php/general_recommendations">recommandations</a>
 
-# Fonts
-[Powerline fonts](https://github.com/powerline/fonts)
+<h1 align="center">Fonts</h1>
+<a href="https://github.com/powerline/fonts">Powerline fonts</a>
+## By Pascal Canuel
